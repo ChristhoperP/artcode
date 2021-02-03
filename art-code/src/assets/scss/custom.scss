@@ -1,0 +1,8 @@
+// Your variable overrides
+$body-bg: #404552;
+$body-color: white;
+$primary: #00d95a;
+$custom-colors: ( "prueba": rgb(236, 86, 250));
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
