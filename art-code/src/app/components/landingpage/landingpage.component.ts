@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ComunicationserviceService } from "../../services/comunicationservice.service";
 
 @Component({
   selector: 'app-landingpage',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public comunicationserviceService: ComunicationserviceService) { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

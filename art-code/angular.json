@@ -25,6 +25,7 @@
                         ],
                         "styles": [
                             "src/assets/scss/custom.scss",
+                            "src/assets/scss/globa-styles.scss",
                             "src/styles.scss"
                         ],
                         "scripts": [
