@@ -10,17 +10,9 @@ export class SidebarComponent implements OnInit {
   
   activo = true
 
-  
-  constructor(private renderer: Renderer2, private comunicationserviceService: ComunicationserviceService) { }
-
-  //sidebar:any = this.el.nativeElement.querySelector("")
+  constructor(private renderer: Renderer2, public comunicationserviceService: ComunicationserviceService) { }
 
   ngOnInit(): void {
-  }
-
-  activation(){
-    this.activo = !this.activo
-    this.comunicationserviceService.activo = !this.comunicationserviceService.activo
   }
 
 }
