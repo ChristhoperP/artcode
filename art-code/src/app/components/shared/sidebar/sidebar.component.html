@@ -1,5 +1,9 @@
 <div class="sidenav" [ngClass]="{'hide-sidebar': !activo}">
-    <a href="#about">About</a>
+    <a [routerLink]='["/create-project"]'>
+        <span class="icon-sidebar">
+            <i class="fas fa-plus"></i>
+        </span>
+        Project</a>
     <a href="#services">Services</a>
     <a href="#clients">Clients</a>
     <a href="#contact">Contact</a>

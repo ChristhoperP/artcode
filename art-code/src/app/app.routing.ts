@@ -5,6 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { LandingpageComponent } from "./components/landingpage/landingpage.component";
 import { SignUpComponent } from "./components/sign-up/sign-up.component";
 import { SignInComponent } from "./components/sign-in/sign-in.component";
+import { ProjectComponent } from "./components/project/project.component";
 
 //Path array
 const appRoutes: Routes = [
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
     {path: 'home', component: LandingpageComponent},
     {path: 'sign-up', component: SignUpComponent},
     {path: 'sign-in', component: SignInComponent},
+    {path: 'create-project', component: ProjectComponent},
     {path: '**', component: LandingpageComponent}
 ];
 

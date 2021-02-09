@@ -9,6 +9,15 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { CodeHtmlComponent } from './components/project/code-html/code-html.component';
+import { ProjectComponent } from './components/project/project.component';
+
+import { HighlightJsModule } from 'ngx-highlight-js';
+
+import { FormsModule } from "@angular/forms";
+import { CodemirrorModule } from "@ctrl/ngx-codemirror";
+import { CodeCssComponent } from './components/project/code-css/code-css.component';
+import { CodeJsComponent } from './components/project/code-js/code-js.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +27,18 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
     FooterComponent,
     SidebarComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    CodeHtmlComponent,
+    ProjectComponent,
+    CodeCssComponent,
+    CodeJsComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HighlightJsModule,
+    FormsModule,
+    CodemirrorModule
   ],
   providers: [
     appRoutingProviders

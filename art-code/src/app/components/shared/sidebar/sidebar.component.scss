@@ -2,12 +2,17 @@
     height: 100%;
     width: 160px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
+    z-index: 5;
+}
+
+.icon-sidebar{
+    font-size: 0.7em; 
+    color: #8e0000;
 }
 
 .sidenav a {
@@ -20,6 +25,10 @@
 
 .sidenav a:hover {
     color: #f1f1f1;
+    .icon-sidebar{
+        font-size: 0.8em;
+        color: #b40101;
+    }
 }
 
 @media screen and (max-height: 450px) {
@@ -40,7 +49,7 @@
     padding: 3px;
     border: 1px solid white;
     border-radius: 4px;
-    z-index: 1;
+    z-index: 5;
     cursor: pointer;
 }
 
