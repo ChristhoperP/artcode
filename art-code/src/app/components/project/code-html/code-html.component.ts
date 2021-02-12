@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeHtmlComponent implements OnInit {
 
+  @Output() changeHtml = new EventEmitter();
   public content:any;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  emitChange(){
+    this.changeHtml.emit( this.content );
   }
 
 }

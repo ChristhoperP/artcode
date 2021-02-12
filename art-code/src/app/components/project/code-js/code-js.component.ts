@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-code-js',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeJsComponent implements OnInit {
 
+  @Output() changeJS = new EventEmitter();
   public content:any;
 
   constructor() { }
@@ -14,4 +15,7 @@ export class CodeJsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  emitChange(){
+    this.changeJS.emit( this.content );
+  }
 }

@@ -1,8 +1,12 @@
 <ngx-codemirror
   [(ngModel)]="content"
+  (ngModelChange)="emitChange()"
   [options]="{
     lineNumbers: true,
     theme: 'material',
     mode: 'htmlmixed'
   }"
 ></ngx-codemirror>
+
+<!-- (ngModelChange) si se quiere el cambio cuando se va editando el código -->
+<!-- on-change si se quiere el cambio hasta salir del textarea -->

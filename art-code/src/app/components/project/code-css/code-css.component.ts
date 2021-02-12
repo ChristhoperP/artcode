@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-code-css',
@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeCssComponent implements OnInit {
 
+  @Output() changeCSS = new EventEmitter();
   public content:any;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  emitChange(){
+    this.changeCSS.emit( this.content );
   }
 
 }
