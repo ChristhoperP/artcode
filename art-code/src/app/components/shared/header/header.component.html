@@ -1,8 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0">
         <div class="container-fluid h-100">
-            <a class="navbar-brand" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" viewBox="0 0 811 110">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="height: 60px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
+                    viewBox="0 0 811 110">
                     <defs>
                         <style>
                             .cls-1 {
@@ -25,11 +26,12 @@
                     </defs>
                     <text id="ArtCode" class="cls-1" x="-7" y="107.566">ArtCode</text>
                 </svg></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
+                <ul *ngIf="!logged; else notLogged" class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
                     <li class="nav-item active d-flex align-items-center border-down button-size">
                         <a class="nav-link text-light" [routerLink]="['/sign-up']">Sign Up</a>
                     </li>
@@ -37,10 +39,32 @@
                         <a class="nav-link text-light" [routerLink]="['/sign-in']">Sign In</a>
                     </li>
                 </ul>
-                <!-- <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
+                <ng-template #notLogged>
+                    <ul class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
+                        <li class="d-none d-md-flex align-items-center">
+                            <a href="#">
+                                <img src="assets/img/bootstrap-logo.svg" alt="" width="30" height="24">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-md-flex align-items-center border-down button-size">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                My Name
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end"
+                                aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" [routerLink]="['user/profile']">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">My Works</a></li>
+                                <li><a class="dropdown-item" href="#">Share Project</a></li>
+                                <li><a class="dropdown-item" href="#">My Plan</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ng-template>
             </div>
         </div>
     </nav>

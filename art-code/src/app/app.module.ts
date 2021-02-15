@@ -20,6 +20,7 @@ import { FormsModule } from "@angular/forms";
 import { CodemirrorModule } from "@ctrl/ngx-codemirror";
 import { CodeCssComponent } from './components/project/code-css/code-css.component';
 import { CodeJsComponent } from './components/project/code-js/code-js.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CodeJsComponent } from './components/project/code-js/code-js.component'
     ProjectComponent,
     CodeCssComponent,
     CodeJsComponent,
-    SafeURLPipe
+    SafeURLPipe,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

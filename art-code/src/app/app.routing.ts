@@ -6,6 +6,7 @@ import { LandingpageComponent } from "./components/landingpage/landingpage.compo
 import { SignUpComponent } from "./components/sign-up/sign-up.component";
 import { SignInComponent } from "./components/sign-in/sign-in.component";
 import { ProjectComponent } from "./components/project/project.component";
+import { ProfileComponent } from "./components/user/profile/profile.component";
 
 //Path array
 const appRoutes: Routes = [
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
     {path: 'sign-up', component: SignUpComponent},
     {path: 'sign-in', component: SignInComponent},
     {path: 'create-project', component: ProjectComponent},
+    {path: 'user/profile', component: ProfileComponent},
     {path: '**', component: LandingpageComponent}
 ];
 
