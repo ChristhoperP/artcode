@@ -3,6 +3,16 @@
 <br>
 <div class="container-fluid">
     <div class="row">
+        <div class="col-0 col-sm-4 col-md-6 col-lg-8"></div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="btn btn-outline-success mb-1 form-control" data-bs-toggle="modal"
+                data-bs-target="#folder-model"><i class="fas fa-folder-plus"></i> Save</button>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="btn btn-outline-danger mb-1 form-control"><i class="fas fa-project-diagram"></i> Cancel</button>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12 col-md-6 col-lg-4 code-area">
             <div class="language"><i class="fab fa-html5" style="color: #f4470b;"></i> HTML</div>
             <app-code-html (changeHtml)="html = $event; updatePage();"></app-code-html>

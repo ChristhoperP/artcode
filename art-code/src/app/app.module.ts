@@ -21,6 +21,8 @@ import { CodemirrorModule } from "@ctrl/ngx-codemirror";
 import { CodeCssComponent } from './components/project/code-css/code-css.component';
 import { CodeJsComponent } from './components/project/code-js/code-js.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
+import { MyUnitComponent } from './components/my-unit/my-unit.component';
+import { SnippetComponent } from './components/snippet/snippet.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ProfileComponent } from './components/user/profile/profile.component';
     CodeCssComponent,
     CodeJsComponent,
     SafeURLPipe,
-    ProfileComponent
+    ProfileComponent,
+    MyUnitComponent,
+    SnippetComponent
   ],
   imports: [
     BrowserModule,

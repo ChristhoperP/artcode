@@ -3,15 +3,35 @@
         <span class="icon-sidebar">
             <i class="fas fa-plus"></i>
         </span>
-        Project</a>
-    <a href="#services">Services</a>
-    <a href="#clients">Clients</a>
-    <a href="#contact">Contact</a>
+        Project
+    </a>
+    <a [routerLink]='["/my-unit"]'>
+        <span class="icon-sidebar">
+            <i class="far fa-save"></i>
+        </span>
+        Mi Unit
+    </a>
+    <a href="#clients">
+        <span class="icon-sidebar">
+            <i class="fas fa-share-square"></i>
+        </span>
+        Shared with me</a>
+    <a [routerLink]='["/create-snippet"]'>
+        <span class="icon-sidebar">
+            <i class="far fa-file"></i>
+        </span>
+        +Snippet</a>
+    <hr class="text-light">
+    <div>
+        <span class="in-sidebar">Proyects: 5/12</span>
+        <span class="in-sidebar text-ligth"><button type="button" class="btn btn-success">My Plan</button></span>
+    </div>
 </div>
 
-<span class="bt-sidebar text-light" (click)="activo = !activo; comunicationserviceService.activo = activo" [ngClass]="{'mov-bt-sidebar': !activo}">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="d-flex align-items-center bi bi-arrow-left-right"
-        viewBox="0 0 16 16">
+<span class="bt-sidebar text-light" (click)="activo = !activo; comunicationserviceService.activo = activo"
+    [ngClass]="{'mov-bt-sidebar': !activo}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="d-flex align-items-center bi bi-arrow-left-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
             d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
     </svg>

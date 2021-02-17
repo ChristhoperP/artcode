@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 184px;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,10 +15,10 @@
     color: #8e0000;
 }
 
-.sidenav a {
+.sidenav a, .in-sidebar {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 19px;
     color: #818181;
     display: block;
 }
@@ -64,4 +64,9 @@
 
 .mov-bt-sidebar {
     margin-left: 0;
+}
+
+/* paddig */
+.pad-a{
+    padding: 6px 8px 6px 16px;;
 }
