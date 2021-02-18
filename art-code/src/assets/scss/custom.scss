@@ -3,6 +3,15 @@ $body-bg: #404552;
 //$body-color: white;
 //$primary: #00d95a;
 //$custom-colors: ( "prueba": rgb(236, 86, 250));
+
+//custom tables
+$table-cell-padding-y:        .9rem;
+$table-cell-padding-x:        .5rem;
+$table-cell-padding-y-sm:     .25rem;
+$table-cell-padding-x-sm:     .25rem;
+
+
+
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 // Merge the maps
 //$theme-colors: map-merge($theme-colors, $custom-colors);

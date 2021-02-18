@@ -23,6 +23,7 @@ import { CodeJsComponent } from './components/project/code-js/code-js.component'
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { MyUnitComponent } from './components/my-unit/my-unit.component';
 import { SnippetComponent } from './components/snippet/snippet.component';
+import { PlansComponent } from './components/plans/plans.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SnippetComponent } from './components/snippet/snippet.component';
     SafeURLPipe,
     ProfileComponent,
     MyUnitComponent,
-    SnippetComponent
+    SnippetComponent,
+    PlansComponent
   ],
   imports: [
     BrowserModule,

@@ -6,16 +6,16 @@
         <div class="col-0 col-sm-4 col-md-6 col-lg-8"></div>
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <button type="button" class="btn btn-outline-success mb-1 form-control" data-bs-toggle="modal"
-                data-bs-target="#folder-model"><i class="fas fa-folder-plus"></i> Save</button>
+                data-bs-target="#folder-model"><i class="far fa-save"></i> Save</button>
         </div>
         <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <button type="button" class="btn btn-outline-danger mb-1 form-control"><i
-                    class="fas fa-project-diagram"></i> Cancel</button>
+            <button type="button" class="btn btn-outline-danger mb-1 form-control"><i class="far fa-window-close"></i> Cancel</button>
         </div>
+        <hr class="text-light">
     </div>
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 code-area">
-            <div class="language"><i class="fab fa-html5" style="color: #f4470b;"></i> HTML</div>
+    <div class="row mt-3">
+        <div class="col-md-7 col-lg-8 m-auto snippet-code">
+            <div class="language"><i class="fas fa-file-code" style="color: #f4470b;"></i> Snippet</div>
             <ngx-codemirror 
             [(ngModel)]="content" 
             [options]="{
