@@ -9,6 +9,7 @@ import { ProjectComponent } from "./components/project/project.component";
 import { SnippetComponent } from "./components/snippet/snippet.component";
 import { ProfileComponent } from "./components/user/profile/profile.component";
 import { MyUnitComponent } from "./components/my-unit/my-unit.component";
+import { SharedWithMeComponent } from "./components/shared-with-me/shared-with-me.component";
 import { PlansComponent } from "./components/plans/plans.component";
 
 //Path array
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     {path: 'create-snippet', component: SnippetComponent},
     {path: 'user/profile', component: ProfileComponent},
     {path: 'my-unit', component: MyUnitComponent},
+    {path: 'shared-with-me', component: SharedWithMeComponent},
     {path: 'plans', component: PlansComponent},
     {path: '**', component: LandingpageComponent}
 ];

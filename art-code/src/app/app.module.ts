@@ -24,6 +24,7 @@ import { ProfileComponent } from './components/user/profile/profile.component';
 import { MyUnitComponent } from './components/my-unit/my-unit.component';
 import { SnippetComponent } from './components/snippet/snippet.component';
 import { PlansComponent } from './components/plans/plans.component';
+import { SharedWithMeComponent } from './components/shared-with-me/shared-with-me.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PlansComponent } from './components/plans/plans.component';
     ProfileComponent,
     MyUnitComponent,
     SnippetComponent,
-    PlansComponent
+    PlansComponent,
+    SharedWithMeComponent
   ],
   imports: [
     BrowserModule,
