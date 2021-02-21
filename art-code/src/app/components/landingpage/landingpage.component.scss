@@ -1,13 +1,26 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+.logo-header{
+    width: 350px;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+.img-background{
+    /* position: absolute;
+    z-index: 0; */
+    background-image: url("../../../assets/img/fondo/background-image.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+@media (max-width: 768px) {
+
+    .logo-header{
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-background{
+        background-image: url("../../../assets/img/fondo/background-sm-image.png");
+        background-repeat: no-repeat;
+        background-position: right top;
     }
 }
