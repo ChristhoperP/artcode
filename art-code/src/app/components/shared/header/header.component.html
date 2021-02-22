@@ -43,8 +43,8 @@
                 <ng-template #notLogged>
                     <ul class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
                         <li class="d-none d-md-flex align-items-center">
-                            <a href="#">
-                                <img src="assets/img/bootstrap-logo.svg" alt="" width="30" height="24">
+                            <a [routerLink]="['/user/profile']">
+                                <img class="rounded-circle" src="assets/img/profile/default.png" alt="" width="30">
                             </a>
                         </li>
                         <li class="nav-item dropdown d-md-flex align-items-center border-down button-size">
@@ -61,7 +61,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                <li><a class="dropdown-item" (click)="logged=false">Log Out</a></li>
                             </ul>
                         </li>
                     </ul>
