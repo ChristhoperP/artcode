@@ -15,8 +15,23 @@
     color: #8e0000;
 }
 
-.sidenav a, .in-sidebar {
+.sidenav a{
     padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+}
+
+.p-in-sidebar{
+    padding: 6px 8px 6px 16px;
+}
+
+.progress{
+    height: 0.2rem;
+}
+
+.text-sidebar{
     text-decoration: none;
     font-size: 19px;
     color: #818181;

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { ComunicationserviceService } from 'src/app/services/comunicationservice.service';
 
 const TYPE_CSS = 'text/css'
 const TYPE_JS = 'text/javascript'
@@ -10,7 +11,7 @@ const TYPE_HTML = 'text/html'
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit, OnDestroy {
 
   public html:string = `<p>Hola mundo</p>`;
   public css:string = `p{
@@ -22,10 +23,16 @@ export class ProjectComponent implements OnInit {
   public url:any;
   
   constructor(
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    public comunicationserviceService: ComunicationserviceService
   ) { this.updatePage() }
 
   ngOnInit(): void {
+    this.comunicationserviceService.proyect_snippet = true;
+  }
+
+  ngOnDestroy(): void{
+    this.comunicationserviceService.proyect_snippet = false;
   }
 
   getBlob(code, type){

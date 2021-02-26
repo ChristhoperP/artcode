@@ -32,40 +32,50 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul *ngIf="!logged; else notLogged" class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
-                    <li class="nav-item active d-flex align-items-center border-down button-size">
-                        <a class="nav-link text-light" [routerLink]="['/sign-up']">Sign Up</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center border-down button-size">
-                        <a class="nav-link text-light" [routerLink]="['/sign-in']">Sign In</a>
-                    </li>
-                </ul>
-                <ng-template #notLogged>
-                    <ul class="navbar-nav ms-auto mb-2 h-100 mb-md-0">
-                        <li class="d-none d-md-flex align-items-center">
-                            <a [routerLink]="['/user/profile']">
-                                <img class="rounded-circle" src="assets/img/profile/default.png" alt="" width="30">
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown d-md-flex align-items-center border-down button-size">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                My Name
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end"
-                                aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" [routerLink]="['/user/profile']">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">My Works</a></li>
-                                <li><a class="dropdown-item" href="#">Share Project</a></li>
-                                <li><a class="dropdown-item" href="#">My Plan</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" (click)="logged=false">Log Out</a></li>
-                            </ul>
+                <div class="ms-auto d-md-flex">
+                    <ul *ngIf="comunicationserviceService.proyect_snippet" class="navbar-nav mb-2 h-100 mb-md-0 me-2">
+                        <li class="nav-item active d-flex align-items-center border-down button-size">
+                            <a class="nav-link text-light" href="#"><i class="fas fa-cloud-upload-alt"></i> Save</a>
                         </li>
                     </ul>
-                </ng-template>
+    
+                    <ul *ngIf="!logged; else notLogged" class="navbar-nav mb-2 h-100 mb-md-0">
+                        <li class="nav-item active d-flex align-items-center border-down button-size">
+                            <a class="nav-link text-light" [routerLink]="['/sign-up']">Sign Up</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center border-down button-size">
+                            <a class="nav-link text-light" [routerLink]="['/sign-in']">Sign In</a>
+                        </li>
+                    </ul>
+                    <ng-template #notLogged>
+                        <ul class="navbar-nav mb-2 h-100 mb-md-0">
+                            <li class="d-none d-md-flex align-items-center">
+                                <a [routerLink]="['/user/profile']">
+                                    <img class="rounded-circle" src="assets/img/profile/default.png" alt="" width="30">
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown d-md-flex align-items-center border-down button-size">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Name
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" [routerLink]="['/user/profile']">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">My Works</a></li>
+                                    <li><a class="dropdown-item" href="#">Share Project</a></li>
+                                    <li><a class="dropdown-item" href="#">My Plan</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" (click)="logged=false">Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ng-template>
+
+                </div>
+                
             </div>
         </div>
     </nav>

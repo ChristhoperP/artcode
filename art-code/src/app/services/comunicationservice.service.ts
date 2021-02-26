@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class ComunicationserviceService {
 
   activo: boolean = true
+  proyect_snippet = false
 
   constructor() { }
 

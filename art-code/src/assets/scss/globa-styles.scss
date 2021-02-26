@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'fuente-titulos';
+    src: url('../fonts/FrancoisOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'fuente-texto';
+    src: url('../fonts/FiraCode-VariableFont_wght.ttf');
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'fuente-titulos',Arial,sans-serif;
+}
+
+p, a, span, button{
+    font-family: 'fuente-texto',Arial,sans-serif;
+}
+
 .main {
     margin-left: 184px;
 }

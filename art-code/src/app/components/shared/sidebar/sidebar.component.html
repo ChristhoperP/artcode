@@ -5,6 +5,11 @@
         </span>
         Project
     </a>
+    <a [routerLink]='["/create-snippet"]'>
+        <span class="icon-sidebar">
+            <i class="far fa-file"></i>
+        </span>
+        Snippet</a>
     <a [routerLink]='["/my-unit"]'>
         <span class="icon-sidebar">
             <i class="far fa-save"></i>
@@ -15,16 +20,21 @@
         <span class="icon-sidebar">
             <i class="fas fa-share-square"></i>
         </span>
-        Shared with me</a>
-    <a [routerLink]='["/create-snippet"]'>
-        <span class="icon-sidebar">
-            <i class="far fa-file"></i>
-        </span>
-        +Snippet</a>
+        Shared</a>
     <hr class="text-light">
-    <div>
-        <span class="in-sidebar">Proyects: 5/12</span>
-        <span class="in-sidebar text-ligth"><button [routerLink]='["/plans"]' type="button" class="btn btn-success">My Plan</button></span>
+    <div class="p-in-sidebar">
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="text-sidebar mb-3">Proyects: 06/12</span>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="text-sidebar mb-2">Snippets: 07/12</span>
+        <span class="text-ligth"><button [routerLink]='["/plans"]' type="button" class="btn form-control btn-secondary">My
+                Plan</button></span>
     </div>
 </div>
 

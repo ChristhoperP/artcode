@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComunicationserviceService } from 'src/app/services/comunicationservice.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   public logged:boolean = true;
 
-  constructor() { }
+  constructor(public comunicationserviceService: ComunicationserviceService) { }
 
   ngOnInit(): void {
   }

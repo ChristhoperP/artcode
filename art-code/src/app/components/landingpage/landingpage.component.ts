@@ -8,6 +8,8 @@ import { ComunicationserviceService } from "../../services/comunicationservice.s
 })
 export class LandingpageComponent implements OnInit {
 
+  public anima:Array<boolean> = [];
+
   constructor(public comunicationserviceService: ComunicationserviceService) { }
 
   ngOnInit(): void {
