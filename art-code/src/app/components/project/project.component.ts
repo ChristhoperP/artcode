@@ -13,7 +13,7 @@ const TYPE_HTML = 'text/html'
 })
 export class ProjectComponent implements OnInit, OnDestroy {
 
-  public html:string = `<p>Hola mundo</p>`;
+  public html:string = `<p onclick="hola()">Hola mundo</p>`;
   public css:string = `p{
                           color: blue;
                       }`;
@@ -65,7 +65,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
     this.url = this.getURL(this.html, this.css, this.js);
   }
 
-  getSafeUrl(url){
+  getSafeUrl(url): SafeUrl{
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 

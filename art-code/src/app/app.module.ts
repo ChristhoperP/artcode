@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from "./app.routing";
 
-import { SafeURLPipe } from "./pipes/safe-url.pipe";
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
@@ -39,7 +37,6 @@ import { SharedWithMeComponent } from './components/shared-with-me/shared-with-m
     ProjectComponent,
     CodeCssComponent,
     CodeJsComponent,
-    SafeURLPipe,
     ProfileComponent,
     MyUnitComponent,
     SnippetComponent,
